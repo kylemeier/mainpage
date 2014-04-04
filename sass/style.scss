@@ -1,0 +1,86 @@
+//colors http://dribbble.com/shots/1142512-Agenda
+
+@font-face {
+	//http://www.fontsquirrel.com/fonts/BonvenoCF
+    font-family: 'bonvenocflight';
+    src: url('../fonts/BonvenoCF-Light-webfont.eot');
+    src: url('../fonts/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BonvenoCF-Light-webfont.woff') format('woff'),
+         url('../fonts/BonvenoCF-Light-webfont.ttf') format('truetype'),
+         url('../fonts/BonvenoCF-Light-webfont.svg#bonvenocflight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	//http://www.fontsquirrel.com/fonts/amaranth
+    font-family: 'amaranth';
+    src: url('../fonts/Amaranth-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	//http://www.fontsquirrel.com/fonts/amaranth
+    font-family: 'amaranth';
+    src: url('../fonts/Amaranth-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body{
+	font-family:'bonvenocflight', Helvetica, sans-serif;
+}
+
+.greeting{
+	font-size:3em;
+	padding:200px 50px 100px 50px;
+	text-align:center;
+	color:#fff;
+	background-color:#58A1BE;
+}
+
+.project-links{
+	position:relative;
+	z-index:2;
+	box-shadow: 0 -2px 10px #303D4F, 0 2px 10px #303D4F;
+	
+	font-family:'amaranth';
+	font-weight:bold;
+	height:100px;
+	font-size:3em;
+	width:100%;
+	
+	background-color:#DBDDDA;
+	.divider{
+		background-color: #CE6960;
+    	-webkit-background-clip: text;
+    	-moz-background-clip: text;
+    	background-clip: text;
+    	color: transparent;
+    	text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
+	}
+	ul{
+		width:850px;
+		margin:0 auto;
+		
+	}
+	
+	li{
+		display:inline-block;
+		margin:0 20px;
+		
+	}
+	a{
+		line-height:100px;
+		color: rgba(206,105,96,0.6);
+		text-shadow: 2px 2px 6px rgba(54,27,25,0.2), 0px -5px 35px rgba(255,255,255,0.3);            
+	}
+}
+
+.social{
+	background-color:#50768A;
+	height:1000px;
+}
