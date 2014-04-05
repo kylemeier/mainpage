@@ -51,7 +51,7 @@ body{
 
 .greeting{
 	font-size:5em;
-	padding:100px 50px;
+	padding:10%;
 	text-align:center;
 	color:#fff;
 	background-color:#58A1BE;
@@ -71,7 +71,8 @@ body{
 
 .section-heading{
 	font-size:1.5em;
-	color:#CE6960;
+	color:#5E789B;
+	font-weight:normal;
 	text-align:center;
 	margin:0 auto;
 	padding-top:75px;
@@ -80,7 +81,7 @@ body{
 .project-links{
 	position:relative;
 	z-index:2;
-	box-shadow: 0 -2px 10px #303D4F, 0 2px 10px #303D4F;
+	box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
 	font-family:'amaranth';
 	font-weight:bold;
 	height:auto;
@@ -111,23 +112,26 @@ body{
 	li{
 		text-align:center;
 		padding:20px 0;
-			a{
+		a{
 
-		// color: rgba(206,105,96,1);
-		text-decoration:underline;
-		color:#5E789B;
-		text-shadow: 2px 2px 6px rgba(54,27,25,0.2), 0px -5px 35px rgba(255,255,255,0.3);
-         
-	}
+			text-decoration:underline;
+			-webkit-transition: color .5s;
+			-moz-transition: color .5s;
+			-o-transition: color .5s;
+			transition:color .5s;
+			color:#5E789B;
+			text-shadow: 2px 2px 6px rgba(54,27,25,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+			&:hover{
+				color:#CE6960;
+			} 
+		}
 		&:last-child{
-		padding-bottom:75px;
-	}
+			padding-bottom:75px;
+		}
 
 	}
-
-
 }
-// resume e602 mail e603 git e600 linkedin e601
+
 .social{
 	color:#fff;
 	height:100px;
@@ -143,18 +147,17 @@ body{
 		box-sizing:border-box;
 		font-size:2em;
 		padding:50px 0;
-		// width:250px;
 		width:200px;
-		transition: color 1s;
 	}
 	a{
 		color:inherit;
-		transition: color 1s;
 	}
-	
 	#resume:after, #linkedin:after, #github:after, #email:after{
 		font-family:'icons';
-		transition: color 1s;
+		-webkit-transition: text-shadow .5s;
+		-moz-transition: text-shadow .5s;
+		-o-transition: text-shadow .5s;
+		transition: text-shadow .5s;
 	}
 	#resume:after{
 		content:"\e602";
@@ -169,14 +172,12 @@ body{
 	#email:after{
 		content:"\e603";
 	}
-
 	#resume:hover, #linkedin:hover, #github:hover, #email:hover{
-		color:#DBDDDA;
+		text-shadow:0px 0px 15px #fff;
 		.descriptionbubble{
 			bottom:95px;
 		}
 	}
-
 	.descriptionbubble{
 		-webkit-transition: bottom .5s;
 		-moz-transition: bottom .5s;
@@ -184,14 +185,53 @@ body{
 		transition: bottom .5s;
 		font-size:.8em;
 		position:absolute;
-		display:inline-block;
-
 		bottom:145px;
 		left:120px;
-		// right:-9999px;
 		background-color:#fff;
 		color:#58A1BE;
 		border-radius:8px 8px 8px 0px;
 		border: 3px solid #fff;
+	}
+}
+
+@media(max-width:1030px){
+	.section-heading{
+		padding-top:25px;
+	}
+	.greeting{
+		font-size:4em;
+	}
+	.project-links{
+		font-size:2em;
+	}
+	.social{
+		li{
+			font-size:1.8em;
+			width:100px;
+			padding-top:55px;
+			}
+		.descriptionbubble{
+			left: 65px;
+		}
+	}
+}
+
+@media(max-width:530px){
+	.greeting{
+		font-size:3em;
+		h1{
+			font-size:.4em;
+		}
+		h2{
+			font-size:.8em;
+		}
+	}
+	.social{
+		li:last-child{
+			padding-top:0;
+			}
+		}
+	.descriptionbubble{
+		display:none;
 	}
 }
