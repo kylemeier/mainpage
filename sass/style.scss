@@ -211,7 +211,7 @@ body{
 			padding-top:55px;
 			}
 		.descriptionbubble{
-			left: 65px;
+			left: 70px;
 		}
 	}
 }
@@ -227,8 +227,10 @@ body{
 		}
 	}
 	.social{
-		li:last-child{
+		li:nth-last-child(2), li:last-child{
 			padding-top:0;
+			right:3px;
+			color:#fff;
 			}
 		}
 	.descriptionbubble{

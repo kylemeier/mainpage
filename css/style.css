@@ -156,7 +156,7 @@ body {
     width: 100px;
     padding-top: 55px; }
   .social .descriptionbubble {
-    left: 65px; } }
+    left: 70px; } }
 @media (max-width: 530px) {
   .greeting {
     font-size: 3em; }
@@ -165,8 +165,10 @@ body {
     .greeting h2 {
       font-size: .8em; }
 
-  .social li:last-child {
-    padding-top: 0; }
+  .social li:nth-last-child(2), .social li:last-child {
+    padding-top: 0;
+    right: 3px;
+    color: #fff; }
 
   .descriptionbubble {
     display: none; } }
