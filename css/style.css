@@ -82,8 +82,6 @@ body {
     padding: 20px 0; }
     .project-links li a {
       -webkit-transition: color .5s;
-      -moz-transition: color .5s;
-      -o-transition: color .5s;
       transition: color .5s;
       color: #5E789B;
       text-shadow: 2px 2px 6px rgba(54, 27, 25, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3); }
@@ -111,8 +109,6 @@ body {
   .social #resume:after, .social #linkedin:after, .social #github:after, .social #email:after {
     font-family: 'icons';
     -webkit-transition: text-shadow .5s;
-    -moz-transition: text-shadow .5s;
-    -o-transition: text-shadow .5s;
     transition: text-shadow .5s; }
   .social #resume:after {
     content: "\e602"; }
@@ -128,8 +124,6 @@ body {
       bottom: 95px; }
   .social .descriptionbubble {
     -webkit-transition: bottom .5s;
-    -moz-transition: bottom .5s;
-    -o-transition: bottom .5s;
     transition: bottom .5s;
     font-size: .8em;
     position: absolute;
