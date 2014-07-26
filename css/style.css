@@ -66,12 +66,7 @@ body {
   background-color: #DBDDDA; }
   .project-links .description {
     display: block;
-    background-color: #5E789B;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px;
+    color: #7190BA;
     font-size: .8em; }
   .project-links .descriptionlink {
     text-shadow: none;
