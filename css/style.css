@@ -110,7 +110,8 @@ figure figcaption {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0); }
+  transform: translate3d(0, 100%, 0);
+  z-index: -1; }
 
 figure h2 {
   word-spacing: -0.15em;
@@ -169,7 +170,8 @@ figure:hover figcaption,
 figure:hover h2,
 figure:hover figcaption > a {
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  z-index: 1; }
 
 figure:hover h2 {
   -webkit-transition-delay: 0.05s;
@@ -226,8 +228,8 @@ figure:hover h2 {
   .greeting {
     font-size: 4em; }
 
-  .project-links {
-    font-size: 2em; }
+  figure {
+    width: 90%; }
 
   .site-image {
     width: 100%; }
@@ -238,6 +240,13 @@ figure:hover h2 {
     padding-top: 55px; }
   .social .descriptionbubble {
     left: 70px; } }
+@media (max-width: 645px) {
+  figure figcaption {
+    font-size: .7em; }
+
+  figure .description {
+    bottom: 2em;
+    font-size: 1.2em; } }
 @media (max-width: 530px) {
   .greeting {
     font-size: 3em; }

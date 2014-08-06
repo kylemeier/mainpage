@@ -186,6 +186,7 @@ figure figcaption {
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
+	z-index:-1;
 }
 
 figure h2 {
@@ -258,6 +259,7 @@ figure:hover h2,
 figure:hover figcaption > a {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	z-index:1;
 }
 
 figure:hover h2 {
@@ -386,7 +388,10 @@ figure:hover h2 {
 		font-size:4em;
 	}
 	.project-links{
-		font-size:2em;
+	}
+
+	figure {
+		width:90%;
 	}
 
 	.site-image{
@@ -403,6 +408,18 @@ figure:hover h2 {
 			left: 70px;
 		}
 	}
+}
+
+@media(max-width:645px){
+	
+	figure figcaption {
+		font-size:.7em;
+	}
+	figure .description {
+		bottom:2em;
+		font-size:1.2em;
+	}
+
 }
 
 @media(max-width:530px){
