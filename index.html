@@ -4,29 +4,78 @@
         <meta charset="UTF-8">
         <title>Kyle Meier</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Raleway:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
 	<div class="content">
 		<div class="greeting">
-			<header>Kyle Meier<header>
-			<h2>web developer seeking a challenging web development position</h2>
+<!-- 			<header>Kyle Meier<header>
+			<h2>web developer seeking a challenging web development position</h2> -->
+			<p>Welcome!</p>
+			<p>My name's Kyle and I'm a front-end developer.</p>
 		</div>
-		<div class="project-links">
-				<h1 class="section-heading">Projects</h1>
+		<section id='about-me'>
+			<h1 class='section-heading'>About Me</h1>
+			<div id='strengths' class='group'>
+				<div class="strengths-list">
+					<h2>Who I Am</h2>
+					<ul>
+						<li>Critical thinker</li>
+						<li>Resourceful</li>
+						<li>Self-starter</li>
+						<li>Highly motivated</li>
+						<li>Excels under pressure</li>
+						<li>Loves collaboration</li>
+						<li>Hard working</li>
+						<li>Zealous learner</li>
+					</ul>
+				</div>
+				<div class="strengths-list">
+					<h2>Skills I Have</h2>
+					<ul>						
+						<li>Responsive Design</li>
+						<li>HTML5</li>
+						<li>CSS3/SASS</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>AngularJS</li>
+						<li>UX Design</li>
+					</ul>
+				</div>
+				<div class="strengths-list">
+					<h2>Technologies I use</h2>
+					<ul>
+						<li>Command line Git</li>
+						<li>Sublime Text</li>
+						<li>Yeoman</li>
+						<li>Bower</li>
+						<li>Codekit</li>
+						<li>Grunt</li>
+						<li>Firebase</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="project-links">
+				<h1 class="section-heading">My Work</h1>
 				<figure>
 					<img src="images/fitness.jpg" alt="fitness.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Fitness</h2>
 						<a href="http://dev.kylemeier.com/fitness" target="_blank">View Project</a>
 						<div class='description'>
-							<p>Fitness web app built in Angular and Firebase</p>
+							<p>Responsive fitness web app built in Angular and Firebase</p>
 						</div>
 					</figcaption>			
 				</figure>
 				<figure>
 					<img src="images/meredith-adelaide.jpg" alt="meredith-adelaide.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Meredith Adelaide</h2>
 						<a href="http://meredithadelaide.com" target="_blank">View Project</a>
@@ -40,6 +89,7 @@
 				</figure>
 				<figure>
 					<img src="images/tangram.jpg" alt="tangram.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Tangram</h2>
 						<a href="http://kylemeier.com/tangram" target="_blank">View Project</a>
@@ -50,6 +100,7 @@
 				</figure>
 				<figure>
 					<img src="images/accordion-menu.jpg" alt="accordion-menu.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Accordion Menu</h2>
 						<a href="http://kylemeier.com/accordion-menu" target="_blank">View Project</a>
@@ -60,6 +111,7 @@
 				</figure>
 				<figure>
 					<img src="images/catbird.jpg" alt="catbird.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Catbird</h2>
 						<a href="http://kylemeier.com/catbird" target="_blank">View Project</a>
@@ -70,6 +122,7 @@
 				</figure>
 				<figure>
 					<img src="images/kale-bar.jpg" alt="kale-bar.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Kale Bar</h2>
 						<a href="http://kylemeier.com/kalebar" target="_blank">View Project</a>
@@ -80,16 +133,17 @@
 				</figure>
 				<figure>
 					<img src="images/asian-american-subreddit.jpg" alt="asian-american-subreddit.jpg">
+					<div class='overlay'></div>
 					<figcaption>
 						<h2>Asian American Subreddit</h2>
 						<a href="http://www.reddit.com/r/asianamerican/" target="_blank">View Project</a>
 						<div class='description'>
-							<p>Turned the CSS requests of the three Asian American Subreddit moderators into reality</p>
+							<p>Turned the CSS requests of the Asian American Subreddit moderators into reality</p>
 						</div>
 					</figcaption>			
 				</figure>
-		</div>
-		<div class="social">
+		</section>
+		<section class="social">
 			<ul>
 				<li>
 					<a href="resume/Kyle%20Meier%20Junior%20Web%20Developer.pdf" target="_blank"><span id="resume"><span class="descriptionbubble">Resume</span></span></a>
@@ -106,7 +160,7 @@
 				</li>
 			</ul>
 
-		</div>
+		</section>
 	</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

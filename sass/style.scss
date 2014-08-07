@@ -3,12 +3,12 @@
 $ulwidth: 80%;
 
 @font-face {
-    font-family: 'bonvenocf';
-    src: url('../fonts/BonvenoCF-Light-webfont.eot');
-    src: url('../fonts/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BonvenoCF-Light-webfont.woff') format('woff'),
-         url('../fonts/BonvenoCF-Light-webfont.ttf') format('truetype'),
-         url('../fonts/BonvenoCF-Light-webfont.svg#bonvenocflight') format('svg');
+    font-family: 'futuralt';
+    src: url('../fonts/futuralt-light-webfont.eot');
+    src: url('../fonts/futuralt-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futuralt-light-webfont.woff') format('woff'),
+         url('../fonts/futuralt-light-webfont.ttf') format('truetype'),
+         url('../fonts/futuralt-light-webfont.svg#futuralt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,13 +48,19 @@ $ulwidth: 80%;
 	font-style: normal;
 }
 
-body{
-	font-family:'bonvenocf', Helvetica, sans-serif;
-	background-color:#58A1BE;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+body{
+	background-color:#58A1BE;
 }
 
 .greeting{
+	font-family: 'futuralt', sans-serif;
+	font-weight:300;
 	font-size:5em;
 	padding:10%;
 	text-align:center;
@@ -75,18 +81,31 @@ body{
 }
 
 .section-heading{
-	font-size:1.5em;
-	color:#5E789B;
+	font-family: 'futuralt', sans-serif;
+	font-size:5em;
+	color:#58A1BE;
 	font-weight:normal;
 	text-align:center;
 	margin:0 auto;
-	padding-top:75px;
+	margin-bottom:25px;
 }
 
-.site-image{
-	width:80%;
-	border:1px solid #5E789B;
-	border-radius:5px;
+#strengths{
+	position:relative;
+	font-family: 'Libre Baskerville', serif;
+	font-weight:400;
+	font-size:2em;
+	margin-top:50px;
+
+	h2{
+		font-weight:700;
+		font-size:1.1em;
+		text-decoration:underline;
+	}
+}
+.strengths-list{
+	display:inline-block;
+	vertical-align:top;
 }
 
 // .project-links li {
@@ -128,7 +147,7 @@ body{
 // }
 
 
-.project-links {
+.project-links, #about-me {
 	overflow: hidden;
 	margin: 0;
 	padding: 3em 0 0 0;
@@ -136,35 +155,87 @@ body{
 	list-style: none;
 	text-align: center;
 	background:#F7F7F7;
+	position:relative;
+	z-index:1;
+}
+
+.project-links{
+	background:#99BBC9;
+	background:#DDE0E0;
+	box-shadow: 0 -2px 15px #1C2124, 0 2px 15px #1C2124;
+	.section-heading{
+		color:#303A3E;
+	}
+}
+
+#main{
+	position:relative;
+	top:500px;
 	box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
+	-webkit-transform: translateZ(1);
+	// height:150%;
+}
+
+.test{
+	width:100%;
+	height:50px;
+}
+
+#about-me{
+	box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
+	position:relative;
+	display:block;
+	background:#f6f9fa;
+	background:#303A3E;
+	color:#fff;
+
+	padding-bottom:50px;
+	.section-heading{
+		color:#58A1BE;
+	}
 }
 
 /* Common style */
 figure {
 	position: relative;
-	z-index: 1;
-	display: inline-block;
+	display: block;
 	overflow: hidden;
-	margin: -0.135em;
+	// margin: -0.135em;
 	width: 60%;
+	left: 20%;
 	// background: #3085a3;
-	text-align: left;
+	text-align: center;
 	// cursor: pointer;
 	background:#4C4B50;
-	border-radius:5px;
+	margin:0;
 	margin-bottom:25px;
-	border: 1px solid black;
+	// box-sizing:border-box;
+	// border: 1px solid black;
+}
+
+.overlay{
+	height:100%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background:#4C4B50;
+	opacity:0;
+
+	transition: all .35s;
+		// -webkit-transform: translate3d(0,100%,0);
+	// transform: translate3d(0,100%,0);
 }
 
 figure img {
 	position: relative;
 	display: block;
 	width:100%;
-	opacity: 0.5;
-	opacity:1;
-	transition:opacity .35s;
+	// opacity:1;
+	// transition:opacity .35s;
 	//prevent image from moving on hover
-	-webkit-backface-visibility: hidden;
+	// -webkit-backface-visibility: hidden;
+	// border: 1px solid #F7F7F7;
+	// box-sizing:border-box;
 }
 
 figure figcaption {
@@ -186,7 +257,8 @@ figure figcaption {
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
-	z-index:-1;
+	// border: 1px solid black;
+	// border-radius:5px;
 }
 
 figure h2 {
@@ -211,18 +283,19 @@ figure .description {
 
 figure .description {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	width:100%;
 	display:block;
 	position: absolute;
-	bottom: 8em;
-	padding: 2em;
+	bottom:5em;
+	margin-left: -1em;
 	color: #fff;
 	text-transform: none;
 	font-size: 90%;
 	opacity: 0;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
 }
 
 figure h2,
@@ -245,27 +318,33 @@ figure figcaption > a::before {
 figure  h2 {
 	display: inline-block;
 }
+figure:hover{
 
-figure:hover img{
-	opacity: 0.3;
+	.overlay{
+		opacity:0.7;
+				-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	.description{
+		opacity:1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	figcaption,
+	h2,
+	figcaption > a{
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	h2,
+	a{
+		-webkit-transition-delay: 0.05s;
+		transition-delay: 0.05s;	
+	}
 }
 
-figure:hover .description {
-	opacity: 1;
-}
-
-figure:hover figcaption,
-figure:hover h2,
-figure:hover figcaption > a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	z-index:1;
-}
-
-figure:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
 
 ///////
 
@@ -323,7 +402,8 @@ figure:hover h2 {
 
 .social{
 	color:#fff;
-	height:100px;
+	height:50px;
+	-webkit-backface-visibility: hidden;
 	ul{
 		width:$ulwidth;
 		margin:0 auto;
@@ -392,6 +472,10 @@ figure:hover h2 {
 
 	figure {
 		width:90%;
+		left:5%;
+		img{
+			height:110%;
+		}
 	}
 
 	.site-image{
@@ -413,10 +497,10 @@ figure:hover h2 {
 @media(max-width:645px){
 	
 	figure figcaption {
-		font-size:.7em;
+		// font-size:.7em;
 	}
 	figure .description {
-		bottom:2em;
+		bottom:4em;
 		font-size:1.2em;
 	}
 
