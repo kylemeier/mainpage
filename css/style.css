@@ -1,13 +1,7 @@
 @font-face {
-  font-family: 'proximanova';
-  src: url("../fonts/proximanova-light-webfont.eot");
-  src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#futuralt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot?2op9lo");
-  src: url("../fonts/icons.eot?#iefix2op9lo") format("embedded-opentype"), url("../fonts/icons.woff?2op9lo") format("woff"), url("../fonts/icons.ttf?2op9lo") format("truetype"), url("../fonts/icons.svg?2op9lo#icons") format("svg");
+  src: url("../icons/icons.eot?2op9lo");
+  src: url("../icons/icons.eot?#iefix2op9lo") format("embedded-opentype"), url("../icons/icons.woff?2op9lo") format("woff"), url("../icons/icons.ttf?2op9lo") format("truetype"), url("../icons/icons.svg?2op9lo#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
@@ -23,15 +17,16 @@ a {
 p,
 ul,
 .description-link {
-  font-family: 'proximanova', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 #greeting {
   font-size: 5em;
-  padding: 10% 0;
+  padding: 10%;
   text-align: center;
   background-color: #58A1BE; }
   #greeting p {
-    padding-top: 25px; }
+    padding-top: 25px;
+    font-size: .8em; }
 
 .section-heading {
   font-size: 3em;
@@ -183,7 +178,7 @@ figcaption {
   padding: 50px 0;
   width: 200px; }
 #social a {
-  font-family: 'proximanova', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: inherit; }
 
 #resume {
