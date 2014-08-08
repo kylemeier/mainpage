@@ -25,18 +25,18 @@ ul,
 .description-link {
   font-family: 'proximanova', sans-serif; }
 
-.greeting {
+#greeting {
   font-size: 5em;
   padding: 10% 0;
   text-align: center;
   background-color: #58A1BE; }
-  .greeting p {
+  #greeting p {
     padding-top: 25px; }
 
 .section-heading {
   font-size: 3em;
   border: 5px solid #fff;
-  width: 300px;
+  width: 275px;
   margin: 0 auto 50px auto; }
 
 #project-links, #about-me {
@@ -64,6 +64,8 @@ ul,
   display: inline-block;
   vertical-align: top;
   padding: 0 25px; }
+  .strengths-list:first-child {
+    margin-left: 30px; }
 
 #project-links {
   background: #DDE0E0;
@@ -121,13 +123,13 @@ figure {
 
 .description {
   letter-spacing: 1px;
-  width: 100%;
+  width: 90%;
+  left: 5%;
   display: block;
   position: absolute;
   bottom: 5em;
-  margin-left: -1em;
   text-transform: none;
-  font-size: 90%;
+  font-size: .9em;
   opacity: 0;
   -webkit-transition: all 0.35s;
           transition: all 0.35s;
@@ -142,7 +144,9 @@ figure {
   background: #4C4B50;
   opacity: 0;
   -webkit-transition: all .35s;
-          transition: all .35s; }
+          transition: all .35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0); }
 
 img {
   position: relative;
@@ -165,11 +169,11 @@ figcaption {
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0); }
 
-.social ul {
+#social ul {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
-.social li {
+#social li {
   display: inline-block;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -178,7 +182,7 @@ figcaption {
   font-size: 2em;
   padding: 50px 0;
   width: 200px; }
-.social a {
+#social a {
   font-family: 'proximanova', sans-serif;
   color: inherit; }
 
@@ -210,62 +214,61 @@ figcaption {
 #github:hover,
 #email:hover {
   text-shadow: 0px 0px 15px #fff; }
-  #resume:hover .descriptionbubble,
-  #linkedin:hover .descriptionbubble,
-  #github:hover .descriptionbubble,
-  #email:hover .descriptionbubble {
-    bottom: 95px; }
+  #resume:hover .social-bubble,
+  #linkedin:hover .social-bubble,
+  #github:hover .social-bubble,
+  #email:hover .social-bubble {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
 
-.descriptionbubble {
-  -webkit-transition: bottom .5s;
-  transition: bottom .5s;
+.social-bubble {
+  -webkit-transition: all .5s;
+          transition: all .5s;
   font-size: .8em;
   position: absolute;
-  bottom: 145px;
-  left: 120px;
+  -webkit-transform: translate3d(0, -150%, 0);
+          transform: translate3d(0, -150%, 0);
+  bottom: 3.5em;
+  left: 4.5em;
   background-color: #fff;
   color: #58A1BE;
   border-radius: 8px 8px 8px 0px;
   border: 3px solid #fff; }
 
-@media (max-width: 1030px) {
-  .section-heading {
-    padding-top: 25px; }
+@media (max-width: 1120px) {
+  body {
+    font-size: .7em; }
 
-  .greeting {
-    font-size: 4em; }
+  .description {
+    font-size: 1.1em; }
+
+  #social li {
+    width: 100px; }
+
+  .social-bubble {
+    bottom: 4.5em;
+    left: 3.5em;
+    -webkit-transform: translate3d(0, -200%, 0);
+            transform: translate3d(0, -200%, 0); } }
+@media (max-width: 850px) {
+  .strengths-list {
+    display: block;
+    padding-bottom: 25px; }
+    .strengths-list:first-child {
+      margin-left: 0; }
 
   figure {
-    width: 90%;
-    left: 5%; }
-    figure img {
-      height: 110%; }
-
-  .site-image {
-    width: 100%; }
-
-  .social li {
-    font-size: 1.8em;
-    width: 100px;
-    padding-top: 55px; }
-  .social .descriptionbubble {
-    left: 70px; } }
-@media (max-width: 645px) {
-  figure .description {
-    bottom: 4em;
-    font-size: 1.2em; } }
-@media (max-width: 530px) {
-  .greeting {
+    width: 95%;
+    left: 2.5%; } }
+@media (max-width: 520px) {
+  #greeting {
     font-size: 3em; }
-    .greeting h1 {
-      font-size: .4em; }
-    .greeting h2 {
-      font-size: .8em; }
 
-  .social li:nth-last-child(2), .social li:last-child {
-    padding-top: 0;
-    right: 3px;
-    color: #fff; }
+  #social li {
+    width: 50px; }
 
-  .descriptionbubble {
-    display: none; } }
+  .social-bubble {
+    display: none; }
+
+  figcaption {
+    font-size: .93em; } }
