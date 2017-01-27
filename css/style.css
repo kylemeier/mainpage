@@ -43,8 +43,7 @@ ul,
   z-index: 1; }
 
 #about-me {
-  -webkit-box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
-          box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
+  box-shadow: 0 -2px 15px #303D4F, 0 2px 15px #303D4F;
   background: #303A3E; }
 
 #strengths {
@@ -65,8 +64,7 @@ ul,
 
 #project-links {
   background: #DDE0E0;
-  -webkit-box-shadow: 0 -2px 15px #1C2124, 0 2px 15px #1C2124;
-          box-shadow: 0 -2px 15px #1C2124, 0 2px 15px #1C2124; }
+  box-shadow: 0 -2px 15px #1C2124, 0 2px 15px #1C2124; }
   #project-links .section-heading {
     color: #16272E;
     border: 5px solid #16272E; }
@@ -90,7 +88,6 @@ figure {
             transform: translate3d(0, 200%, 0); }
   figure h2 {
     color: #16272E;
-    word-spacing: -0.15em;
     float: left; }
   figure a {
     float: right;
@@ -173,9 +170,7 @@ figcaption {
 #social li {
   display: inline-block;
   position: relative;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 2em;
   padding: 50px 0;
   width: 200px; }
